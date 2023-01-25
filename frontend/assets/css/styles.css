@@ -1,0 +1,47 @@
+.true {
+  color: lawngreen;
+  /*width: 32px;*/
+  /*content: '\f099';*/
+}
+
+.profile {
+  width: 24px;
+  border-radius: 100px;
+}
+
+thead {
+  background-color: #9773d2;
+}
+
+tbody {
+  background-color: #eeeeee;
+}
+
+.button {
+  background-color: #57c95c;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+button:hover {
+  background-color: #3E8E41;
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
