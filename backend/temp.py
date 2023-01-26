@@ -4,21 +4,13 @@ from fastapi import Query
 import requests
 from bs4 import BeautifulSoup
 import uvicorn
-import json
-
 
 app = FastAPI()
 
 client = Client()
 
-# get username and password from config.json
-with open('config.json', 'r') as f:
-    config = json.load(f)
-
-# set username and password from config.json
-username = config['username']
-password = config['password']
-
+username = "Testingaccount12435232"
+password = "Rooney07"
 
 client.login(username, password)
 
@@ -38,20 +30,6 @@ def instagram(username: str = Query(None), amounts: int = Query(None)):
         follower_user.append(follower.username)
         followerdict[follower.username] = user_info
     return followerdict
-
-
-@app.get("/api/v1/instagram/message")
-# create a function with 3 parameters, username, message and follow
-def message(username: str = Query(None), message: str = Query(None), follow: bool = Query(None)):
-    # get id from username
-    user = client.user_id_from_username(username)
-    if follow == True:
-    # follow user
-        client.user_follow(user)
-    # send message to user
-    client.direct_send(message, [user])
-    # follow user
-    return "Message sent"
 
 @app.get("/api/v1/instagram/dummydata")
 # create function with no parameters

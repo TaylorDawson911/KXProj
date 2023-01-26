@@ -1,0 +1,242 @@
+/* styling the settings modal */
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+.modal-content * {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.modal-content h4 {
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal-content input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: #ffffff;
+}
+
+input:hover{
+  outline: 2px solid #0001;
+}
+
+#follow {
+  display: block;
+    height: 24px;
+    width: 24px;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+select {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+select option {
+  color: #000000;
+}
+
+select:hover {
+  outline: 2px solid #0001;
+}
+
+.modal-content .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0 0 0 10px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+.modal-content button {
+  margin-top: 0px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710 !important;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Theme Select Button */
+.theme-select {
+  width: 130px;
+  color: rgb(255, 255, 255);
+}
+
+.theme-select:hover {
+  outline: 2px solid #0001;
+}
+
+.theme-select option {
+  color: #000000;
+  background-color: #00000000;
+}
+
+
+/* Style the pagination ul*/
+#pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.active {
+  background-color: #ffffff;
+  color: #080710;
+}
+
+/* Style the pagination page-item */
+.pagination li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.page-item {
+  display: inline;
+  padding: 0 10px;
+}
+
+
+/* Dark Theme */
+
+/* dark theme is a dark blue / white theme */
+
+[data-theme="darkTheme"] body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+[data-theme="darkTheme"] .modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+
+[data-theme="darkTheme"] .modal-content * {
+  color: #ffffff;
+}
+
+[data-theme="darkTheme"] .modal-content input {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="darkTheme"] .modal-content select option {
+  background-color: #555555;
+}
+
+[data-theme="darkTheme"] .button {
+  background-color: #ffffff00;
+  color: #ffffff !important;
+  border: solid 2px #ffffff;
+}
+
+[data-theme="darkTheme"] thead {
+  background-color: #ffffff00;
+  color: #ffffff;
+}
+
+[data-theme="darkTheme"] tbody {
+  background-color: #ffffff00;
+  color: #ffffff;
+}
+
+/* leet theme is black and green */
+
+[data-theme="leetTheme"] body {
+  background-color: #000000;
+  color: #00ff00;
+}
+
+[data-theme="leetTheme"] .modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff001a;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+
+[data-theme="leetTheme"] .modal-content * {
+  color: #00ff00;
+}
+
+[data-theme="leetTheme"] .modal-content input {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+[data-theme="leetTheme"] .modal-content select option {
+  background-color: #555555;
+}
+
+[data-theme="leetTheme"] .button {
+  background-color: #ffffff00;
+  color: #00ff00 !important;
+  border: solid 2px #00ff00;
+}
+
+[data-theme="leetTheme"] button {
+  background-color: #ffffff00;
+  color: #00ff00 !important;
+  border: solid 2px #00ff00;
+}
+
+[data-theme="leetTheme"] thead {
+  background-color: #ffffff00;
+  color: #00ff00;
+}
+
+[data-theme="leetTheme"] tbody {
+  background-color: #ffffff00;
+  color: #00ff00;
+}
+
+

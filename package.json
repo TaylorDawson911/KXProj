@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "react-pagination-table": "^2.0.2"
+  }
+}
